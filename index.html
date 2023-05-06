@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Adoption Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Adopt a Pet Today! </h1>
+        <h5> <div id = "h1"> 
+          There are many shelter animals that are ready to be adopted 
+              from the Montgomery County Animal Services and Adoption Center. 
+              These pets are looking for a home and their home could be YOU!
+          
+           These pets can be found at: <br>
+              Montgomery County Animal Services and Adoption Center <br>
+              7315 Muncaster Mill Rd, <br> Derwood MD 20855
+          
+      </div></h5>
+      </header>
+      <div class="container">
+        <div class="left_section box">
+            <h2>Find your preferred pet HERE!</h2>
+            <canvas id = "barChart"></canvas>>
+          <form class="box main_form">
+            <button type="button" id = "data_load">Load Data</button>
+            
+            <label for="resto">Enter the name of a animal you want to see: </label>
+            <input type="text" id="resto" name="resto"/>
+            <button type="button" id= "generate">Generate List</button>
+            <button type="button" id="filter"> Filter Data</button>
+          </form>
+        </div>
+        </div>
+        <div class="right_section box">
+            <h2>Here are some pets you would like!</h2>
+            
+            <ol class="box" id ="restaurant_list">List of restaurants
+              A list of local restaurants 
+            </ol>
+            <div class="lds-ellipsis" id="data_load_animation"><div></div><div></div><div></div><div></div></div>
+        </div>
+      </div>
+      <footer class="footer box">
+        For more information
+        <a href="https://www.montgomerycountymd.gov/animalservices/adoption/howtoadopt.html" target="_blank" rel="noopener noreferrer"> 
+            click here!</a>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
